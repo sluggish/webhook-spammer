@@ -2,12 +2,7 @@ import discord
 from discord import Webhook
 
 import aiohttp
-import colorama
 import asyncio
-
-from colorama import init
-
-init()
 
 async def send_webhook_msg(webhook, amount: int, username, message):
         async with aiohttp.ClientSession() as session:
